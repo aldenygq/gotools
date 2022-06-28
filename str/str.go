@@ -22,6 +22,19 @@ func InterfaceToString(data interface{}) (string, error) {
 	
 	return string(d), nil
 }
+func ByteToStr(b  []byte) string {
+	return string(b)
+}
+
+func StrToByte(s string) []byte {
+	return []byte(s)
+}
+func StrToRune(s string) []rune {
+	return []rune(s)
+}
+func RuneToStr(r []rune) string {
+	return string(r)
+}
 
 //检测字符串是否包含汉字,包含为true，不包含为false
 func CheckString(str string) bool {
